@@ -1,3 +1,4 @@
+require("vegan")
 fok_fall_env <- data.frame(
   row.names = "SN",
   "SN" = c("fh3",
@@ -33,4 +34,4 @@ fok_fall_env <- data.frame(
   )
 
 fok_fall_rda<- rda(fok_fall_full ~. , fok_fall_env)
-plot(fok_fall_rda, scaling=1)
+plot(fok_fall_rda, scaling=1, name="Fall RDA")
